@@ -7,6 +7,12 @@ namespace PlayerProject
 {
     public abstract class GameObject
     {
+        private int _attack;
+        private int _defense;
+        private int _lives;
+        private string _name;
+        private int _speed;
+
         public int Lives
         {
             get
@@ -19,15 +25,16 @@ namespace PlayerProject
             }
         }
 
-        public int Name
+        public string Name
         {
             get
             {
-                throw new System.NotImplementedException();
+                return Name;
             }
 
             set
             {
+                this._name = Name;
             }
         }
 
@@ -57,37 +64,37 @@ namespace PlayerProject
 
         public void MoveRight()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("{0} is moving  right ",this.Name);
         }
 
         public void MoveLeft()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("{0} is moving  left ", this.Name);
         }
 
         public void MoveForward()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("{0} is moving  forward ", this.Name);
         }
 
         public void MoveUp()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("{0} is moving up ", this.Name);
         }
 
         public void MoveBack()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("{0} is moving back ", this.Name);
         }
 
         public void TurnLeft()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("{0} is turning left ", this.Name);
         }
 
         public void TurnRight()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("{0} is turning right ", this.Name);
         }
     }
 }
