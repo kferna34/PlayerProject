@@ -12,6 +12,8 @@ namespace PlayerProject
         private int _lives;
         private string _name;
         private int _speed;
+        private int _direction;
+        private int _position;
 
         public int Lives
         {
